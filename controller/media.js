@@ -38,7 +38,7 @@ exports.uploadMedia = async (req, res) => {
 
     request.post(
       {
-        url: `https://graph.facebook.com/v13.0/${req.params.id}/media`,
+        url: `https://graph.facebook.com/v20.0/${req.params.id}/media`,
         formData: {
           file: {
             value: fs.createReadStream(files.file.path),
